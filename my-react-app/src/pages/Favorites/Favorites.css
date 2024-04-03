@@ -1,0 +1,40 @@
+.delete {
+  background-color: brown;
+}
+h1 {
+   text-align: center;
+}
+.card {
+  height: 37%;
+  width: 58%;
+  aspect-ratio: 2/3;
+  border: 0.25rem solid rgb(255 255 255 / 15%);
+}
+.card > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@keyframes pulse {
+  from,
+  to {
+    scale: 1;
+  }
+  50% {
+    scale: 1.08;
+  }
+}
+.card:hover > img {
+  animation: pulse;
+}
+.favProperty{
+   margin-top: 4%;
+    display: inline-flex;
+}
+.favImg {
+   transition: transform 0.3s;
+ }
+ 
+ .favImg.hovered {
+   transform: scale(1.2);
+ } 

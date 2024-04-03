@@ -1,0 +1,19 @@
+.allProperties {
+  display: flex;
+  flex-direction: column;
+  /* display: ruby-base-container; */
+  margin: 4% 3% 3% 5%;
+}
+.allProps{
+  display: ruby;
+  margin-top: 5%;
+}
+.favBtn {
+  background-image: url("");
+  width: 10%;
+    height: 20%;
+    margin-bottom: 3%;
+}
+.propertyName{
+  background-color: rgba(255, 228, 196, 0.705);
+}

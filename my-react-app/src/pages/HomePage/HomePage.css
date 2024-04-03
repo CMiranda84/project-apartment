@@ -1,0 +1,47 @@
+.homePage{
+border: hidden;
+display: flex;
+}
+.contentBody{
+    /* margin-left: 40%; */
+    width: 35%;
+    font-size: Xxx-large;
+    color: rgb(15, 15, 15);
+    margin-top: 50%;
+}
+.contentBody > h3 {
+    background-color: rgba(0, 255, 255, 0.272);
+  inline-size: max-content;
+}
+.firstContent{
+    background-image: url("../../../public/image/default920.jpg");
+    /* background-color: rgba(127, 255, 212, 0.532); */
+    align-content: center;
+    margin-top: 30%;
+    margin-right: 10%;
+    text-justify: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.secondContent{
+    background-image: url("../../../public/image/decorlit3.webp");
+    /* background-color: rgba(127, 255, 212, 0.532); */
+    align-content: center;
+    margin-top: 30%;
+    margin-right: 10%;
+    text-justify: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.bodyy{
+    margin: 0%;
+    background-color: black;
+}
+.bigCard{width: 30vmin;
+    aspect-ratio: 5/7;
+background-color: rgba(255, 255, 255, 0.5);
+}
+.littleCard {width: 12vmin;
+    aspect-ratio: 5/7;
+    background-color: rgba(255, 255, 255, 0.5));
+}

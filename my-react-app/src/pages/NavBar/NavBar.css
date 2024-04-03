@@ -1,0 +1,29 @@
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  /* border: solid  black; */
+  /* max-width: 1270px; */
+  height: 72px;
+  margin: 0 auto;
+  /* background: #002F34; */
+  color: aquamarine;
+  border: hidden; 
+  /* depois mudar border para hidden */
+}
+.kaudeta {
+  margin: 1% 10% 0% -3%;
+  width: 25%;
+}
+.title {
+  text-decoration: none !important;
+  align-self: flex-start;
+  font-size: xxx-large;
+  margin-right: 50%;
+  color: aquamarine;
+  height: 72px;
+  margin-top: 0;
+}
+.favorites {
+  color: aquamarine;
+  outline: none;
+}
