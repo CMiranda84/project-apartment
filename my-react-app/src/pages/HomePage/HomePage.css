@@ -33,10 +33,10 @@ display: flex;
     background-repeat: no-repeat;
     background-size:contain;
 }
-.bodyy{
+/* .bodyy{
     margin: 0%;
     background-color: black;
-}
+} */
 .bigCard{width: 30vmin;
     aspect-ratio: 5/7;
 background-color: rgba(255, 255, 255, 0.5);

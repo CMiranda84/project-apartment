@@ -5,7 +5,7 @@ import "./HomePage.css";
 function HomePage() {
   return (
     <Layout>
-      <div className="bodyy">
+      {/* <div className="bodyy">
 
 <div className="bigCard">
         </div>
@@ -23,10 +23,10 @@ function HomePage() {
         </div>
 <div className="littleCard">
         </div>
-      </div>
+      </div> */}
 
 
-      {/* <div className="homePage">
+      <div className="homePage">
         
         <Link className="navLink" to="/properties">
           <div className="firstContent">
@@ -42,7 +42,7 @@ function HomePage() {
             </div>
           </div>
         </Link>
-      </div> */}
+      </div>
     </Layout>
   );
 }
