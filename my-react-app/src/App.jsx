@@ -8,6 +8,7 @@ import Favorites from "./pages/Favorites/Favorites";
 import Layout from "./pages/Layout/Layout";
 import CreateProperty from "./pages/CreateProperty/CreateProperty";
 import EditPage from "./pages/PropertyDetails/EditPage";
+import AboutUs from "./pages/AllProperties/AboutUs";
 // import { useState } from "react";
 // import propertyApi from "./api/api";
 // import SideBar from "./pages/SideBar/SideBar";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/newProperty" element={<CreateProperty />} />
         <Route path="/properties/:propertyId/:editPage" element={<EditPage />} />
+        <Route path="/aboutUs" element={<AboutUs/>} />
 
       </Routes>
     </Layout>

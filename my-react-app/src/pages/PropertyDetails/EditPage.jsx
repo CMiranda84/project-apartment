@@ -2,6 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import propertyApi from "../../api/api";
 import { useParams } from "react-router-dom";
+import "./EditPage.css"
+const editImg = "../../../public/image/edithouse.webp"
 
 
 function EditPage() {
@@ -65,8 +67,9 @@ function EditPage() {
 
   return (
     <div>
-      <h1>EditPage</h1>
-      <form className="creationBody" onSubmit={handleEditProperty}>
+      <h1>Edit this Property</h1>
+      <div className="editionContainer">
+      <form className="editionBody" onSubmit={handleEditProperty}>
       <label>Name</label>
         <input
           className="createInput"
@@ -192,10 +195,13 @@ function EditPage() {
           onChange={handleChange}
         />
 
-        <button type="button" onClick={handleEditProperty}>
+        <button className="buttonsc" type="button" onClick={handleEditProperty}>
           Save changes
         </button>
       </form>
+      <img className="editImage" src={editData.url} alt= {editData.name} />
+     
+      </div>
     </div>
   );
 }

@@ -1,47 +1,132 @@
-.homePage{
-border: hidden;
-display: flex;
+.bodyContainer {
+  display: flex;
+  gap: 2rem;
+  margin-left: 6%;
 }
-.contentBody{
-    /* margin-left: 40%; */
-    width: 35%;
-    font-size: Xxx-large;
-    color: rgb(15, 15, 15);
-    margin-top: 50%;
+.quote {
+  margin-top: 22%;
+  margin-left: 5%;
+  background-color: rgba(127, 255, 212, 0.409);
+  border-radius: 0.5rem;
+  width: 20%;
 }
-.contentBody > h3 {
-    background-color: rgba(0, 255, 255, 0.272);
-  inline-size: max-content;
+.bodyy {
+  margin: 0% 15% 15% 10%;
+  display: grid;
+  place-items: center;
 }
-.firstContent{
-    background-image: url("../../../public/image/default920.jpg");
-    /* background-color: rgba(127, 255, 212, 0.532); */
-    align-content: center;
-    margin-top: 30%;
-    margin-right: 10%;
-    text-justify: center;
-    background-repeat: no-repeat;
-    background-size:cover;
+.bigCard {
+  aspect-ratio: 5.2/7;
+  width: 36vmin;
+  border-radius: 5vmin;
+  position: absolute;
+  transition: transform 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  /* transform: translate(-50%, -50%); */
+  background-size: cover;
+  text-decoration: none;
+  /* filter: saturate(.1); */
 }
-.secondContent{
-    background-image: url("../../../public/image/decorlit3.webp");
-    /* background-color: rgba(127, 255, 212, 0.532); */
-    align-content: center;
-    margin-top: 30%;
-    margin-right: 10%;
-    text-justify: center;
-    background-repeat: no-repeat;
-    background-size:contain;
+.smallCard {
+  aspect-ratio: 7/8;
+  width: 28vmin;
+  border-radius: 5vmin;
+  position: absolute;
+  transition: transform 1000ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  text-decoration: none;
 }
-/* .bodyy{
-    margin: 0%;
-    background-color: black;
+
+/* .bigCard:has(img:transition){
+  filter: saturate(1);
 } */
-.bigCard{width: 30vmin;
-    aspect-ratio: 5/7;
-background-color: rgba(255, 255, 255, 0.5);
+
+.content-title {
+  background-color: rgba(61, 60, 55, 0.516);
+  color: aquamarine;
+  text-align: center;
+  font-size: Xx-large;
 }
-.littleCard {width: 12vmin;
-    aspect-ratio: 5/7;
-    background-color: rgba(255, 255, 255, 0.5));
+#cd1 {
+  background-color: rgba(0, 255, 17, 0.5);
+  transform: translateX(-10%) rotate(-1deg);
+  background-image: url("../../../public/image/2885.jpg");
+  filter: saturate(0.1);
+}
+#cd2 {
+  filter: saturate(0.1);
+  transform: rotate(2deg);
+  background-color: rgba(255, 128, 0, 0.5);
+  background-image: url("../../../public/image/housedition.webp");
+  
+}
+#cd3 {
+  /* background-color: rgba(0, 0, 255, 0.5); */
+  transform: translateX(-6%) rotate(-3deg);
+  background-color: rgba(187, 187, 230, 0.5);
+  background-image: url("../../../public/image/addhouse.jpg");
+  filter: saturate(0.1);
+}
+#cd4 {
+  background-color: rgba(0, 0, 255, 0.929);
+  transform: translate(-10%, 3%) rotate(5deg);
+  background-image: url("https://images.adsttc.com/media/images/613f/df13/8580/2b01/6405/340e/newsletter/whatsapp-image-2021-02-09-at-10-9.jpg?1631575834");
+  filter: saturate(0.1);
+  /* transition: filter 0.5s; */
+}
+#cds2 {
+  /* background-color: rgba(0, 0, 255, 0.5); */
+  transform: rotate(2deg);
+  background-color: rgba(255, 128, 0, 0.5);
+  background-image: url("../../../public/image/housedition.webp");
+  filter: saturate(0.1);
+}
+#cds3 {
+  /* background-color: rgba(0, 0, 255, 0.5); */
+  transform: translateX(-6%) rotate(-3deg);
+  background-color: rgba(187, 187, 230, 0.5);
+  background-image: url("../../../public/image/addhouse.jpg");
+  filter: saturate(0.1);
+}
+#cds4 {
+  background-color: rgba(0, 0, 255, 0.929);
+  transform: translate(-10%, 3%) rotate(5deg);
+  background-image: url("https://images.adsttc.com/media/images/613f/df13/8580/2b01/6405/340e/newsletter/whatsapp-image-2021-02-09-at-10-9.jpg?1631575834");
+  filter: saturate(0.1);
+  /* transition: filter 0.5s; */
+}
+
+/* #cd4:hover > img {
+  filter: saturate(2);
+} */
+
+.cardGroup:hover > #cd1 {
+  transform: translate(63%, -50%) rotate(-18deg);
+  filter: saturate(1.5);
+}
+
+.cardGroup:hover > #cd2 {
+  transform: translate(-63%, -50%) rotate(18deg);
+  filter: saturate(1.5);
+}
+.cardGroup:hover > #cd3 {
+  transform: translate(63%, 18%) rotate(24deg);
+  filter: saturate(1.5);
+}
+.cardGroup:hover > #cd4 {
+  transform: translate(-63%, 18%) rotate(-24deg);
+  filter: saturate(1.5);
+}
+/* ////////////////////////////////// */
+.cardGroup:hover > #cds2 {
+  transform: translate(0%, -9%) rotate(1deg);
+  filter: saturate(1.5);
+}
+.cardGroup:hover > #cds3 {
+  transform: translate(111%, 18%) rotate(4deg);
+  filter: saturate(1.5);
+}
+.cardGroup:hover > #cds4 {
+  transform: translate(-111%, 18%) rotate(-4deg);
+  filter: saturate(1.5);
 }

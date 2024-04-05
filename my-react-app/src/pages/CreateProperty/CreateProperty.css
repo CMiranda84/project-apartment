@@ -6,11 +6,37 @@
     align-items: center;
     /* margin-top: 1%; */
 }
+.addBody{
+    display: flex;
+    gap: 10rem;
+}
 .createInput {
-    width: 42%;
+    width: 100%;
 }
 .creationBody > label{
     /* background-color: rgba(255, 228, 196, 0.881); */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
+}
+.creationBody > textarea {
+    margin-left: 39%;
+}
+.creationBody{
+    width: 70%;
+}
+.creation{
+    width: 33%;
+    background-color: rgba(245, 245, 220, 0.244);
+}
+.addBg{
+    width: 30%;
+    margin: 10% 0% 10% 5%;
+}
+.AddImg{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.AddImg > img{
+    width: 90%;
 }

@@ -14,7 +14,7 @@ function Favorites() {
       const { data } = await propertyApi.get("/favorites");
 
       const promises = data.map((favorite) => {
-        return propertyApi.get("/properties/" + favorite.propertyId);
+        return propertyApi.get(`/properties/${favorite.propertyId}?_embed=favorites`);
       });
 
       const responses = await Promise.all(promises);
@@ -45,14 +45,14 @@ function Favorites() {
     );
   }
 
-  const handleFavDelete = async (propertyId) => {
+  const handleFavDelete = async (favoriteId) => {
     try {
-      const response = await propertyApi.delete(`/favorites/${propertyId}`);
-
+      console.log(favoriteId)
+      const response = await propertyApi.delete(`/favorites/${favoriteId}`);
       if (response.status === 200) {
-        setFavorites(favorites.filter((apart) => apart.id !== propertyId));
-        // setFavorites(null)
         console.log("Fav Deleted:", response.data);
+        setFavorites(favorites.filter((apart) => apart.id !== favoriteId));
+        // setFavorites(null)
       } else {
         console.error(
           "failed to delete favorite property",
@@ -60,7 +60,7 @@ function Favorites() {
         );
       }
     } catch (error) {
-      console.error(error);
+      console.error("An error occurred while deleting favorite property:", error);
     }
   };
 
@@ -69,8 +69,9 @@ function Favorites() {
       <h1> Favorites</h1>
       <div className="favProperty">
         {favorites.map((apart) => {
-          return (
-            <div>
+          console.log(apart)
+          return ( 
+            <div className="cardWraper">
               <Link to={"/properties/" + apart.id}>
               <div
                 className="card"
@@ -93,7 +94,7 @@ function Favorites() {
                     </Link>
                   <button
                     className="delete"
-                    onClick={() => handleFavDelete(apart.id)}
+                    onClick={() => handleFavDelete(apart.favorites[0].id)}
                     >
                     remove from fav{" "}
                   </button>

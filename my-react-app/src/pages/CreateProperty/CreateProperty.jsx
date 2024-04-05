@@ -3,6 +3,7 @@ import axios from "axios";
 import propertyApi from "../../api/api";
 import { useNavigate } from "react-router-dom";
 import "./CreateProperty.css"
+const addBg = "../../../public/image/addhouse.jpg"
 
 function CreateProperty() {
   const navigate = useNavigate();
@@ -68,7 +69,14 @@ function CreateProperty() {
 
   return (
     <>
-      <div  >
+      
+      <div className="addBody">
+    <div className="AddImg">
+      <h1>Add your Property</h1> 
+        <img className="addBg" src={addBg} alt="" />
+    </div>
+    <div className="creation">
+
         <form className="creationBody" onSubmit={handleCreate}>
           <label>Name</label>
           <input
@@ -78,7 +86,7 @@ function CreateProperty() {
             placeholder="property name"
             value={name}
             onChange={handleName}
-          />
+            />
           <label>Country</label>
           <input
             className="createInput"
@@ -96,7 +104,7 @@ function CreateProperty() {
             placeholder="City of the property"
             value={city}
             onChange={handleCity}
-          />
+            />
           <label>Space</label>
           <input
             className="createInput"
@@ -105,7 +113,7 @@ function CreateProperty() {
             placeholder="details of the property's space"
             value={space}
             onChange={handleSpace}
-          />
+            />
           <label>Description</label>
           <textarea 
             className="createInput"
@@ -115,7 +123,7 @@ function CreateProperty() {
             rows="3"
             value={description}
             onChange={handleDescription}
-          />
+            />
           <label>Type</label>
           <input
             className="createInput"
@@ -154,7 +162,7 @@ function CreateProperty() {
             value={bedrooms}
             onChange={handleBedrooms}
             min={0}
-          />
+            />
           <label>Beds</label>
           <input
             className="createInput"
@@ -174,7 +182,7 @@ function CreateProperty() {
             value={price}
             onChange={handlePrice}
             min={0}
-          />
+            />
           <label>Rating</label>
           <input
             className="createInput"
@@ -184,7 +192,7 @@ function CreateProperty() {
             value={review_scores_rating}
             onChange={handleReview_scores_rating}
             min={0}
-          />
+            />
           <label>Image</label>
           <input
             className="createInput"
@@ -196,6 +204,7 @@ function CreateProperty() {
           /> 
           <button className="addPropertyBtn" >Add Property</button>
         </form>
+            </div>
       </div>
     </>
   );
