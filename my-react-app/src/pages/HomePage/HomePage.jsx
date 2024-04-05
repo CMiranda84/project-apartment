@@ -10,7 +10,7 @@ function HomePage() {
           <div className="cardGroup">
             <Link className="smallCard" id="cds2" to="/aboutUs">
               <div>
-                <h2 className="content-title">About Us</h2>
+                <h2 className="content-title"></h2>
               </div>
             </Link>
             <Link className="smallCard" id="cds3" to="/newProperty">

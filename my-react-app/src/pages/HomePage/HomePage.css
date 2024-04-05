@@ -58,7 +58,6 @@
   transform: rotate(2deg);
   background-color: rgba(255, 128, 0, 0.5);
   background-image: url("../../../public/image/housedition.webp");
-  
 }
 #cd3 {
   /* background-color: rgba(0, 0, 255, 0.5); */
@@ -71,29 +70,32 @@
   background-color: rgba(0, 0, 255, 0.929);
   transform: translate(-10%, 3%) rotate(5deg);
   background-image: url("https://images.adsttc.com/media/images/613f/df13/8580/2b01/6405/340e/newsletter/whatsapp-image-2021-02-09-at-10-9.jpg?1631575834");
-  filter: saturate(0.1);
+  /* filter: saturate(0.1); */
   /* transition: filter 0.5s; */
 }
 #cds2 {
   /* background-color: rgba(0, 0, 255, 0.5); */
   transform: rotate(2deg);
   background-color: rgba(255, 128, 0, 0.5);
-  background-image: url("../../../public/image/housedition.webp");
+  background-image: url("../../../public/image/aboutus.jpg");
   filter: saturate(0.1);
+  background-position: center;
 }
 #cds3 {
   /* background-color: rgba(0, 0, 255, 0.5); */
   transform: translateX(-6%) rotate(-3deg);
   background-color: rgba(187, 187, 230, 0.5);
-  background-image: url("../../../public/image/addhouse.jpg");
+  background-image: url("../../../public/image/partnership.jpg");
   filter: saturate(0.1);
+  background-position: center;
 }
 #cds4 {
   background-color: rgba(0, 0, 255, 0.929);
   transform: translate(-10%, 3%) rotate(5deg);
-  background-image: url("https://images.adsttc.com/media/images/613f/df13/8580/2b01/6405/340e/newsletter/whatsapp-image-2021-02-09-at-10-9.jpg?1631575834");
-  filter: saturate(0.1);
+  background-image: url("../../../public/image/talkToUs.png");
+  /* filter: saturate(0.1); */
   /* transition: filter 0.5s; */
+  background-position: center;
 }
 
 /* #cd4:hover > img {
